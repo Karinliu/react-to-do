@@ -1,0 +1,71 @@
+$red: #F2264F;
+$brown: #433437;
+$white: #fff;
+$secondaryWhite: #fcfcfc; 
+$controllers: #363b48;
+$mainControllers: #454954;
+$resultController: #a5bc7b;
+$result-bg: #2e323d;
+
+.calculator-body{
+	width: 20%;
+    padding: 0 1em;
+    margin: 0 auto;
+
+    .result{
+        height: 4em;
+    	background-color: $result-bg;
+        color: white;
+        padding: 1em 0;
+        border-radius: 1em 1em 0 0;
+    	p{
+            margin: 0;
+            padding-right: 0.5em;
+            text-align: right;
+            font-size: 2em;
+    	}
+    }
+
+    button{
+		width: 25%;
+		border-radius: 0;
+    	height: 3.5em;
+    	margin: 0;
+    	box-shadow: none;
+    	border: none;
+	}
+
+    .border-radius-left{
+        border-radius: 0 0 0 1em;
+    }
+
+    .border-radius-right{
+        border-radius: 0 0 1em 0;
+    }
+
+	.resultController{
+		background-color: $resultController;
+		color: $white;
+		
+		&:hover {
+        	opacity: 0.9;
+    	}
+	}
+
+	.mainControllers{
+		background-color: $mainControllers;
+		color: $white;
+
+		&:hover {
+        	opacity: 0.95;
+    	}
+	}
+
+	.controllers{
+        background-color: $controllers;
+        color: white;
+		&:hover {
+            opacity: 0.95;
+        }
+	}
+}

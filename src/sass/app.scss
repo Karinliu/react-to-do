@@ -1,0 +1,62 @@
+$primaryColor: #e1eefb;
+$white: #fff;
+$black: #000;
+$lightGray: rgb(240, 240, 240); 
+$shadow: rgba(0,0,0,0.35);
+
+.container{
+	h1{
+		padding: 0;
+	}
+}
+.App{
+  width: 50%;
+  padding: 1em;
+  margin: 0 auto;
+  min-height: 85vh;
+  background: $white;
+  padding-left: 3em;
+  background: linear-gradient(90deg, transparent 39px, #abced4 39px, #abced4 41px, transparent 41px), linear-gradient(#eee .1em, white .1em);
+  background-size: 100% 1.5em;
+
+  h1{
+	  width: auto;
+	  display: inline-block;
+  }
+
+  .todoListMain{
+	  width: auto;
+	  display: inline-block;
+	  float: right;
+	  margin: 0.5em;
+
+	  form{
+		display: flex;
+			.btn{
+				border: 1px solid $black;
+
+			}
+			input{
+				border: 1px solid $black;
+				box-shadow: 0.1em 0.1em 0.1em 0em $shadow;
+				border-radius: 0.5em;
+				padding: 0.25em;
+				margin-bottom: 0em;
+			}
+		}
+  }
+
+  .theList{
+		.btn{
+			border: 1px solid $black;
+			padding: 0;
+			img{
+				height: 1em;
+				padding: 0.1em 0.5em;
+			}
+		}
+		.editItem{
+			background: black;
+		}
+  }
+}
